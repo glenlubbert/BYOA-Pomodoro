@@ -1,10 +1,10 @@
 :root {
-    --primary-color: #FF1493; /* Neon Pink */
-    --primary-dark: #C71585; /* Deep Pink */
-    --secondary-color: #FF69B4; /* Hot Pink */
-    --danger-color: #FF6B6B; /* Light Coral */
-    --text-color: #2C3E50; /* Deep Blue */
-    --background-color: #B0E0E6; /* Powder Blue */
+    --primary-color: #FF00FF; /* Magenta - Very bright color */
+    --primary-dark: #FF00FF;
+    --secondary-color: #FF00FF;
+    --danger-color: #FF00FF;
+    --text-color: #000000;
+    --background-color: #000000;
     --card-color: #FFFFFF;
     --border-radius: 12px;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -18,8 +18,8 @@
 }
 
 body {
-    background-color: var(--background-color);
-    color: var(--text-color);
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -37,7 +37,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    border: 1px solid rgba(255, 20, 147, 0.1);
+    border: 5px solid var(--primary-color) !important;
 }
 
 header {
@@ -49,12 +49,12 @@ header {
 h1 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--primary-dark);
+    color: var(--primary-color) !important;
 }
 
 .stats {
     font-size: 0.875rem;
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
 }
 
 .timer-container {
@@ -84,7 +84,7 @@ h1 {
 
 .timer-progress {
     fill: none;
-    stroke: var(--primary-color);
+    stroke: var(--primary-color) !important;
     stroke-width: 4;
     stroke-linecap: round;
     transition: stroke-dashoffset 0.3s ease;
@@ -101,13 +101,13 @@ h1 {
 .time-display {
     font-size: 3.5rem;
     font-weight: 700;
-    color: var(--primary-dark);
+    color: var(--primary-color) !important;
     margin-bottom: 4px;
 }
 
 .timer-label {
     font-size: 1rem;
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
     font-weight: 500;
 }
 
@@ -131,14 +131,16 @@ h1 {
 }
 
 .control-btn.primary {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: var(--primary-color) !important;
+    color: white !important;
     box-shadow: 0 0 10px rgba(255, 20, 147, 0.5);
+    border: 2px solid var(--primary-color) !important;
 }
 
 .control-btn.secondary {
     background-color: rgba(255, 20, 147, 0.1);
     color: var(--primary-dark);
+    border: 2px solid var(--primary-color) !important;
 }
 
 .control-btn:disabled {
@@ -176,9 +178,10 @@ h1 {
 }
 
 .mode.active {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: var(--primary-color) !important;
+    color: white !important;
     box-shadow: 0 0 10px rgba(255, 20, 147, 0.5);
+    border: 2px solid var(--primary-color) !important;
 }
 
 .mode-icon {
