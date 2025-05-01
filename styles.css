@@ -1,10 +1,10 @@
 :root {
-    --primary-color: #2E8B57; /* Sea Green */
-    --primary-dark: #1B4D3E; /* Deep Sea Green */
-    --secondary-color: #FF7F50; /* Coral */
+    --primary-color: #FF1493; /* Neon Pink */
+    --primary-dark: #C71585; /* Deep Pink */
+    --secondary-color: #FF69B4; /* Hot Pink */
     --danger-color: #FF6B6B; /* Light Coral */
     --text-color: #2C3E50; /* Deep Blue */
-    --background-color: #B0E0E6; /* Powder Blue - More noticeable color */
+    --background-color: #B0E0E6; /* Powder Blue */
     --card-color: #FFFFFF;
     --border-radius: 12px;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -37,7 +37,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    border: 1px solid rgba(46, 139, 87, 0.1);
+    border: 1px solid rgba(255, 20, 147, 0.1);
 }
 
 header {
@@ -78,7 +78,7 @@ h1 {
 
 .timer-background {
     fill: none;
-    stroke: rgba(46, 139, 87, 0.1);
+    stroke: rgba(255, 20, 147, 0.1);
     stroke-width: 4;
 }
 
@@ -133,10 +133,11 @@ h1 {
 .control-btn.primary {
     background-color: var(--primary-color);
     color: white;
+    box-shadow: 0 0 10px rgba(255, 20, 147, 0.5);
 }
 
 .control-btn.secondary {
-    background-color: rgba(46, 139, 87, 0.1);
+    background-color: rgba(255, 20, 147, 0.1);
     color: var(--primary-dark);
 }
 
@@ -147,7 +148,7 @@ h1 {
 
 .control-btn:hover:not(:disabled) {
     transform: translateY(-2px);
-    box-shadow: 0 2px 4px rgba(46, 139, 87, 0.2);
+    box-shadow: 0 0 15px rgba(255, 20, 147, 0.7);
 }
 
 .btn-icon {
@@ -169,7 +170,7 @@ h1 {
     padding: 16px;
     border: none;
     border-radius: var(--border-radius);
-    background-color: rgba(46, 139, 87, 0.1);
+    background-color: rgba(255, 20, 147, 0.1);
     cursor: pointer;
     transition: all 0.2s ease;
 }
@@ -177,6 +178,7 @@ h1 {
 .mode.active {
     background-color: var(--primary-color);
     color: white;
+    box-shadow: 0 0 10px rgba(255, 20, 147, 0.5);
 }
 
 .mode-icon {
@@ -194,7 +196,7 @@ h1 {
 }
 
 .mode:hover:not(.active) {
-    background-color: rgba(46, 139, 87, 0.2);
+    background-color: rgba(255, 20, 147, 0.2);
 }
 
 @media (max-width: 480px) {
